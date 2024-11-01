@@ -29,8 +29,8 @@ public class Service {
     }
 
     public void addUser(String name) {
-        String var10000 = name.substring(0, 1).toUpperCase();
-        name = var10000 + name.substring(1).toLowerCase();
+        String f = name.substring(0, 1).toUpperCase();
+        name = f + name.substring(1).toLowerCase();
         if (!this.checkLogin(name)) {
             Leaderboard u = new Leaderboard();
             u.setName(name);
