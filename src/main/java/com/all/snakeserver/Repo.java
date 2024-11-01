@@ -28,10 +28,4 @@ public interface Repo extends JpaRepository<Leaderboard, Integer> {
             nativeQuery = true
     )
     Leaderboard findLast();
-
-    @Query(
-            value = "select * from Leaderboard  where name = :name",
-            nativeQuery = true
-    )
-    Leaderboard findByName(@Param("name") String name);
 }

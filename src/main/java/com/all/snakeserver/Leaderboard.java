@@ -27,7 +27,7 @@ public class Leaderboard {
     @Column(
             name = "score"
     )
-    private int score;
+    private int score = 0;
 
     public Leaderboard() {
     }
